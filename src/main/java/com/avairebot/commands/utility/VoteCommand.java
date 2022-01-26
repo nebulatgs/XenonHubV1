@@ -51,14 +51,14 @@ public class VoteCommand extends Command {
 
     @Override
     public String getDescription() {
-        return "Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Ava <3";
+        return "Enjoy using the bot? Consider voting for the bot to help it grow, it's free but means a lot to the team behind Xenon <3";
     }
 
     @Override
     public List<String> getUsageInstructions() {
         return Arrays.asList(
-            "`:command check` - Checks if you have voted for Ava in the last 12 hours.",
-            "`:command` - Displays the invite link to Ava, or tells you when your vote expires."
+            "`:command check` - Checks if you have voted for Xenon in the last 12 hours.",
+            "`:command` - Displays the invite link to Xenon, or tells you when your vote expires."
         );
     }
 

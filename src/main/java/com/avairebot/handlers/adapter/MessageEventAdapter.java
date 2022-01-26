@@ -74,16 +74,13 @@ public class MessageEventAdapter extends EventAdapter {
     private static final Logger log = LoggerFactory.getLogger(MessageEventAdapter.class);
     private static final Pattern userRegEX = Pattern.compile("<@(!|)+[0-9]{16,}+>", Pattern.CASE_INSENSITIVE);
     private static final String mentionMessage = String.join("\n", Arrays.asList(
-        "Hi there! I'm **%s**, a multipurpose Discord bot built for fun by %s!",
+        "Hi there! I'm **%s**, a multipurpose Discord bot built for fun by %s and modified by @Ish fan 1#8769!",
         "You can see what commands I have by using the `%s` command.",
         "",
-        "I am currently running **AvaIre v%s**",
+        "I am currently running **Xenon v%s**",
         "",
-        "You can find all of my source code on github:",
-        "https://github.com/avaire/avaire",
-        "",
-        "If you like me please vote for AvaIre to help me grow:",
-        "https://discordbots.org/bot/avaire/vote"
+        "Sadly, my source code is currently locked.",
+        "[Contact DORAN03 for source if needed.]"
     ));
 
     /**
