@@ -29,9 +29,9 @@
     </a>
 </p>
 
-## About AvaIre
+## About Xenon
 
-AvaIre is a multipurpose Discord bot made for fun, written in Java 8, using the [JDA](https://github.com/DV8FromTheWorld/JDA) library.
+Xenon is a multipurpose Discord bot made for fun, written in Java 8, using the [JDA](https://github.com/DV8FromTheWorld/JDA) library.
 
 ## Main features
 
@@ -45,27 +45,10 @@ AvaIre is a multipurpose Discord bot made for fun, written in Java 8, using the 
     - Change the languages Ava uses
     - Create custom aliases for existing commands
     - Change the prefix ava uses on a per-module basis
-- And more, check the [full command reference](https://avairebot.com/commands) for all the commands!
-
-Visit our [website](https://avairebot.com/) for more information.
-
-## Deploy AvaIre on Heroku
-You can deploy in a simple way to Heroku using the button below.
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-Before deploying, read [the configuration guide](https://github.com/avaire/avaire/wiki/configuration), aswell as [the guide](https://github.com/avaire/avaire/wiki/heroku-guide) regarding hosting with Heroku.
-
-## Contributing
-
-Thank you for considering contributing to AvaIre! The contribution guide can be found in the [AvaIre documentation](https://github.com/avaire/avaire/wiki/contribution-guide).
-
-## License
-
-AvaIre is open-sourced software licensed under the [GNU General Public License v3.0](http://www.gnu.org/licenses/gpl.html).
+- And more
 
 ## Third Party Licenses
-AvaIre relies on the following projects:
+Xenon relies on the following projects:
 
 | Name | License  |
 |:---|:---|
@@ -88,5 +71,5 @@ AvaIre relies on the following projects:
 
 <p align="center">
   <a href="https://avairebot.com/support"><img src="https://discordapp.com/api/guilds/284083636368834561/widget.png?style=banner2" alt="Discord server"></a>
-  <br>AvaIre support server: https://avairebot.com/support
+  <br>Xenon support server: https://avairebot.com/support
 </p>
