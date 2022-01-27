@@ -42,9 +42,9 @@ Xenon is a multipurpose Discord bot made for fun, written in Java 8, using the [
 - Extended server functionality (Welcome messages, server and user info)
 - High level of customization
     - Changing messages on a per-server basis
-    - Change the languages Ava uses
+    - Change the languages Xenon uses
     - Create custom aliases for existing commands
-    - Change the prefix ava uses on a per-module basis
+    - Change the prefix Xenon uses on a per-module basis
 - And more
 
 ## Third Party Licenses
