@@ -29,62 +29,56 @@ import net.dv8tion.jda.api.entities.Guild;
 import java.util.Collections;
 import java.util.List;
 
-public class ForceLeaveServerCommand extends SystemCommand {
+public class DevAlertCommand extends SystemCommand {
 
-    public ForceLeaveServerCommand(AvaIre avaire) {
+    public DevAlertCommand(AvaIre avaire) {
         super(avaire);
     }
 
     @Override
     public String getName() {
-        return "Force Leave Server Command";
+        return "Dev Announcement Command";
     }
 
     @Override
     public String getDescription() {
-        return "Force leaves a server with the given ID.";
+        return "Allows bot developers to announce things regarding bot development. [Dev+]";
     }
 
     @Override
     public List<String> getUsageInstructions() {
         return Collections.singletonList(
-            "`:command <id>` - Leaves the server with the given ID if the bot is on the server."
+            "`:command <announcement>` - Sends the announcement to all alert channels."
         );
     }
 
     @Override
     public List<String> getExampleUsage() {
-        return Collections.singletonList("`:command 304414699645042690`");
+        return Collections.singletonList("`:command The bot is now undergoing a temporary shutdown.`");
     }
 
-    @Override
-    public List<String> getTriggers() {
-        return Collections.singletonList("force-leave");
-    }
-
-    @Override
-    public boolean onCommand(CommandMessage context, String[] args) {
-        if (args.length == 0) {
-            return sendErrorMessage(context, "You must include the ID of the server you want the bot to leave.");
-        }
 
         try {
-            Guild guild = avaire.getShardManager().getGuildById(args[0]);
-            if (guild == null) {
-                return sendErrorMessage(context, "The bot is not in any guild with an ID of `{0}`", args[0]);
-            }
+            let embed = new Discord.MessageEmbed();
 
-            String name = guild.getName();
-            guild.leave().queue();
-
-            context.makeSuccess("The bot has successfully left the **:name** server with an ID of :id")
-                .set("name", name)
-                .set("id", args[0])
-                .queue();
-
-        } catch (NumberFormatException e) {
-            return sendErrorMessage(context, "Invalid format for an ID given, expecting a valid long value!");
+        let msg = args.join(' ');
+        if(!msg) {
+            embed.setDescription(`Missing arguments.\n\nUsage: \`${client.config.prefix}${path.basename(__filename).split('.')[0]}${' ' + config.usage || ''}\``);
+            embed.setColor(client.config.colors.error);
+            embed.setAuthor(message.author.tag, message.author.displayAvatarURL());
+            return message.channel.send(embed);
         }
+
+
+
+        let alertChannel = await client.channels.fetch(`771371628243189791`);
+
+        embed.setTitle('**Important Dev Announcement**')
+        embed.setDescription(`The following message was sent on behalf of the Xenon administration team:\n\`\`\`${msg}\`\`\``);
+        embed.setColor(client.config.colors.info);
+        embed.setAuthor('Development Team','https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Red_Circle%28small%29.svg/2048px-Red_Circle%28small%29.svg.png');
+        alertChannel.send(embed);
+
 
         return true;
     }
