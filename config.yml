@@ -69,14 +69,14 @@ discord:
   # create one, once you have it, replace the text between the
   # quotes with your token.
   #
-  token: '[Removed.]'
+  token: ''
 
   # This is the OAuth2 URL used for invite links, you should replace
   # the "<client_id>" with your Discord application client ID to
   # make the link valid so people can actually use it to invite
   # your bot to their server.
   #
-  oauth: '[Removed.]'
+  oauth: ''
 
 #--------------------------------------------------------------------------
 # Database Information
