@@ -32,7 +32,6 @@ public class RunEveryThirtySecondsJob extends Job {
 
 
     private final MusicActivityTask musicActivityTask = new MusicActivityTask();
-    private final ChangeGameTask changeGameTask = new ChangeGameTask();
     private final SyncJDAMetricsCounterTask syncGuildMetricsCounterTask = new SyncJDAMetricsCounterTask();
 
     public RunEveryThirtySecondsJob(AvaIre avaire) {
@@ -43,7 +42,6 @@ public class RunEveryThirtySecondsJob extends Job {
     public void run() {
         handleTask(
             musicActivityTask,
-            changeGameTask,
             syncGuildMetricsCounterTask
         );
     }
