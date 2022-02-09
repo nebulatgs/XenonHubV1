@@ -219,7 +219,7 @@ playing:
 # will function as if the music commands doesn't exists.
 #
 
-use-music: true
+use-music: false
 
 #--------------------------------------------------------------------------
 # Music Lavalink Nodes (Advanced Music Settings)
