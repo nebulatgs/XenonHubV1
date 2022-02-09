@@ -2,5 +2,5 @@ version: "1"
 rules:
   - base: master
     upstream: avaire:master
-    autoMerge: true
+    autoMerge: false
     autoMergeHardReset: false
