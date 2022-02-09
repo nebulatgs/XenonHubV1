@@ -1,9 +1,9 @@
-# Build container
-
 FROM gradle:7.3.3-jdk11-alpine AS build
 
 COPY --chown=gradle:gradle . /home/gradle/src
+RUN apt update && apt install git -y
 WORKDIR /home/gradle/src
+RUN git init
 RUN gradle build --no-daemon
 
 # Run container
