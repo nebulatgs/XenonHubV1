@@ -62,21 +62,21 @@ discord:
   # create one, once you have it, replace the text between the
   # quotes with your client id.
   #
-  clientId: '[Removed]'
+  clientId: '928794783923712021'
 
   # This is your Discord application token, if you don't have a Discord
   # application, check the link above and follow the short guide to
   # create one, once you have it, replace the text between the
   # quotes with your token.
   #
-  token: ''
+  token: 'OTI4Nzk0NzgzOTIzNzEyMDIx.Ydd9jA.TDKTn8uOnm7RFQ5vcEeSAQbDsUM'
 
   # This is the OAuth2 URL used for invite links, you should replace
   # the "<client_id>" with your Discord application client ID to
   # make the link valid so people can actually use it to invite
   # your bot to their server.
   #
-  oauth: ''
+  oauth: 'https://discord.com/api/oauth2/authorize?client_id=928794783923712021&permissions=8&scope=bot'
 
 #--------------------------------------------------------------------------
 # Database Information
@@ -101,7 +101,7 @@ database:
   # This is the database type that Ava should use, "MySQL" is used by default however
   # it can be changed to "SQLite" if you'd like to use a flatfile database instead.
   #
-  type: 'sqlite'
+  type: 'MySQL'
 
   #------------------------------------------------------------------------
   # SQLite Settings
@@ -137,24 +137,24 @@ database:
 
   # This is the name of the database that Ava should use for all tables.
   #
-  database: 'avaire'
+  database: 'railway'
 
   # This is the hostname of the database, if you're hosting the database on
   # the same machine the bot is also hosted on you should be fine keeping
   # it as "localhost", if you're using an external server for database
   # hosting you could use the IP address here.
   #
-  hostname: 'localhost'
+  hostname: 'containers-us-west-26.railway.app'
 
   # This is the username for the user that should be used by Ava to access
   # the database, the user should have permission to create, read,
   # update and delete tables in order for Ava to work correctly.
   #
-  username: 'username'
+  username: 'root'
 
   # The password for the database user, used to access the database.
   #
-  password: 'password'
+  password: 'G2SZfypsLxsaO508D5Pf'
 
   # Determine if server certificates should be verified upon connecting to
   # the database, disabling this will still allow for a valid connection
