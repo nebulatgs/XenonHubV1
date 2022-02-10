@@ -20,5 +20,5 @@ RUN adduser --disabled-password --gecos '' avaire; \
 USER avaire
 
 COPY --from=build /home/gradle/src/AvaIre.jar /bin/
-
+RUN java -jar /bin/AvaIre.jar -env --use-plugin-index
 CMD ["java","-jar","/bin/AvaIre.jar","-env","--use-plugin-index"]
