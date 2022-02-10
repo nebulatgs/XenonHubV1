@@ -158,7 +158,7 @@ database:
 
   # DB Port
   #
-  port: "<PORT GOES HERE>"
+  port: "5913"
 
   # Determine if server certificates should be verified upon connecting to
   # the database, disabling this will still allow for a valid connection
