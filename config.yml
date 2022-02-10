@@ -156,6 +156,10 @@ database:
   #
   password: 'jWwj7j95Kf09CJXgRRvT'
 
+  # DB Port
+  #
+  port: "<PORT GOES HERE>"
+
   # Determine if server certificates should be verified upon connecting to
   # the database, disabling this will still allow for a valid connection
   # from a cryptographic perspective, but the database server will not
