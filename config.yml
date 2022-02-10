@@ -101,7 +101,7 @@ database:
   # This is the database type that Ava should use, "MySQL" is used by default however
   # it can be changed to "SQLite" if you'd like to use a flatfile database instead.
   #
-  type: 'MySQL'
+  type: 'SQlite'
 
   #------------------------------------------------------------------------
   # SQLite Settings
