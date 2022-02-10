@@ -144,7 +144,7 @@ database:
   # it as "localhost", if you're using an external server for database
   # hosting you could use the IP address here.
   #
-  hostname: 'containers-us-west-26.railway.app:6601'
+  hostname: 'localhost:6601'
 
   # This is the username for the user that should be used by Ava to access
   # the database, the user should have permission to create, read,
