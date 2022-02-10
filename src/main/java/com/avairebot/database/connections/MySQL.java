@@ -48,7 +48,7 @@ public class MySQL extends HostnameDatabase {
         this(
             dbm,
             dbm.getAvaire().getConfig().getString("database.hostname"),
-            dbm.getAvaire().getConfig().getString("database.port"),
+            Integer.parseInt(dbm.getAvaire().getConfig().getString("database.port")),
             dbm.getAvaire().getConfig().getString("database.database"),
             dbm.getAvaire().getConfig().getString("database.username"),
             dbm.getAvaire().getConfig().getString("database.password")
